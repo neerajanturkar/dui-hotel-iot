@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorThemeDark"
+    android:paddingTop="20dp"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TableRow android:gravity="center" android:padding="5dp">
+                <TextView
+                    android:id="@+id/tvDoorLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Door Light"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp" />
+            </TableRow>
+            <TableRow android:gravity="center" android:padding="5dp">
+                <ToggleButton
+                    android:id="@+id/tbDoorLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="ToggleButton" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TableRow android:gravity="center" android:padding="5dp">
+                <TextView
+                    android:id="@+id/tvMainLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Main Light"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp" />
+            </TableRow>
+            <TableRow android:gravity="center" android:padding="5dp">
+                <ToggleButton
+                    android:id="@+id/tbMainLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ToggleButton" />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TableRow android:gravity="center" android:padding="5dp">
+                <TextView
+                    android:id="@+id/tvTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperature(ºC)"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp" />
+            </TableRow>
+            <TableRow android:gravity="center">
+
+
+                <TextView android:visibility="gone"></TextView>
+
+                <ImageButton
+                    android:id="@+id/btnDecTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_decrease"/>
+                <TextView
+                    android:id="@+id/tvTemperatureValue"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center_horizontal"
+                    android:textSize="30dp" />
+                <ImageButton
+                    android:id="@+id/btnIncTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_increase" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TableRow android:gravity="center" android:padding="5dp">
+                <TextView
+                    android:id="@+id/tvFanSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fan Speed"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp" />
+            </TableRow>
+            <TableRow android:gravity="center">
+
+
+                <TextView android:visibility="gone"></TextView>
+
+                <ImageButton
+                    android:id="@+id/btnDecFanSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_decrease"/>
+                <TextView
+                    android:id="@+id/tvFanSpeedValue"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center_horizontal"
+                    android:textSize="30dp" />
+                <ImageButton
+                    android:id="@+id/btnIncFanSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_increase" />
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:layout_marginEnd="30dp">
+        <TextView android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="Note"/>
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:layout_marginEnd="30dp"
+        >
+
+        <EditText
+            android:id="@+id/edNote"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:focusedByDefault="false"
+            android:textColor="@color/colorPrimary" />
+    </TableRow>
+
+</TableLayout>

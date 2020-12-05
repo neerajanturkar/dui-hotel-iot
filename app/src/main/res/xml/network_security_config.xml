@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config clearTrafficPermitted="true"/>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">ec2-52-57-126-110.eu-central-1.compute.amazonaws.com</domain>
+    </domain-config>
+</network-security-config>

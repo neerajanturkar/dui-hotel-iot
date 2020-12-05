@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hotel Automation</string>
+    <string name="welcomeActivityTitle">Please scan below QR code in DUI Connect App</string>
+</resources>
